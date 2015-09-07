@@ -1,9 +1,9 @@
 {
-  "name": "joker-framework",
+  "name": "joker-boilerplate",
   "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/gustavomeloweb/joker.git"
+    "url": "git://github.com/gustavomeloweb/joker-boilerplate.git"
   },
   "dependencies": {
   },

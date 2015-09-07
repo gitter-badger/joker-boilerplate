@@ -1,6 +1,22 @@
 
-/*---------- resolution - min-width 1050px -----------*/
-@media (min-width:1050px) {
 
-	
+@media (max-width: 850px) {
+
+	//------ intro ------//
+	section#intro {
+		.content{
+			#logo {
+				position:absolute;
+				width:15rem;
+				margin-left:-7.5rem;
+				margin-top:-3rem;
+			}
+
+			a#get-started {
+				font-size:1.1rem;
+				padding:1.2rem .8rem;
+			}
+
+		} 
+	} // end section#intro
 }

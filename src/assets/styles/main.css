@@ -1,0 +1,352 @@
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+html, body {
+  height: 100%; }
+
+body {
+  font-size: 10px;
+  font-family: sans-serif;
+  color: #999; }
+
+/*--- RESET ---*/
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+fieldset, img {
+  border: 0; }
+
+address, caption, cite, code, dfn, em, strong, th, var, optgroup {
+  font-style: inherit;
+  font-weight: inherit; }
+
+del, ins {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+strong {
+  font-weight: bold; }
+
+a {
+  text-decoration: none; }
+
+caption, th {
+  text-align: left; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: 400; }
+
+q:before, q:after {
+  content: ''; }
+
+abbr, acronym {
+  border: 0;
+  font-variant: normal; }
+
+legend {
+  color: #000; }
+
+input, button, textarea, select, optgroup, option {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit; }
+
+input, button, textarea, select {
+  font-size: 100%; }
+
+sup, sub {
+  vertical-align: baseline; }
+
+hr {
+  opacity: 0.3;
+  width: 100%; }
+
+::selection {
+  background: #333;
+  color: #fff; }
+
+#content-menu {
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  width: 750px;
+  padding: 1.2rem 0; }
+  #content-menu.fixed {
+    position: fixed;
+    height: 50px;
+    z-index: 1000;
+    width: 100%;
+    background: #202020;
+    opacity: 0.9;
+    z-index: 10000;
+    right: 0;
+    left: 0;
+    top: 0;
+    padding: 0; }
+  #content-menu nav#fixed-menu {
+    width: 750px;
+    z-index: 10000;
+    top: 25px;
+    margin: 1rem auto 0 auto; }
+    #content-menu nav#fixed-menu li {
+      display: inline;
+      padding: 0 5px;
+      margin: 10px 1rem;
+      text-align: left; }
+      #content-menu nav#fixed-menu li a {
+        padding: .3rem .3rem;
+        color: #fff;
+        font-size: .8rem;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-family: GothamLight;
+        letter-spacing: 1px;
+        cursor: pointer;
+        border: 1px solid transparent; }
+        #content-menu nav#fixed-menu li a.active {
+          color: #a69257;
+          border: 1px solid #a69257;
+          transition-duration: 0.5s; }
+
+#go-top {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1000000;
+  display: none;
+  cursor: pointer;
+  animation: fadein 3s;
+  -moz-animation: fadein 3s;
+  -webkit-animation: fadein 3s;
+  -o-animation: fadein 3s;
+  background: #222;
+  opacity: 0.7; }
+
+section#intro {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  float: left;
+  background: #333; }
+  section#intro .content {
+    width: 100%;
+    max-width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+    box-sizing: border-box; }
+    section#intro .content #logo {
+      position: absolute;
+      width: 44%;
+      left: 50%;
+      margin-left: -22%;
+      top: 50%;
+      margin-top: -10%;
+      z-index: 2000; }
+      section#intro .content #logo img {
+        width: 100%; }
+    section#intro .content #menu-mobile-icon {
+      display: none;
+      height: 55px; }
+    section#intro .content nav#menu {
+      position: absolute;
+      top: 5%;
+      left: 5%;
+      z-index: 1000;
+      transition-duration: 1s; }
+      section#intro .content nav#menu ul {
+        margin: 2rem 0; }
+        section#intro .content nav#menu ul li {
+          display: inline; }
+          section#intro .content nav#menu ul li span {
+            padding: .5rem 1rem;
+            color: #fff;
+            font-size: .9rem;
+            text-transform: uppercase;
+            font-weight: 300;
+            font-family: GothamLight;
+            letter-spacing: 1px;
+            cursor: pointer; }
+    section#intro .content nav#icons {
+      position: absolute;
+      top: 3rem;
+      right: 3rem; }
+      section#intro .content nav#icons ul li {
+        display: inline;
+        margin: 0 .5rem;
+        cursor: pointer; }
+    section#intro .content span#arrow {
+      position: absolute;
+      bottom: 5%;
+      left: 50%;
+      margin-left: -35px;
+      color: #fff;
+      font-size: 1.8rem;
+      font-family: GothamLight;
+      letter-spacing: 1px;
+      cursor: pointer; }
+    section#intro .content span#to-top {
+      position: fixed;
+      display: none;
+      z-index: 1000;
+      bottom: 5%;
+      right: 30px;
+      cursor: pointer;
+      background: #f8f8f8;
+      width: 50px;
+      height: 50px;
+      box-sizing: border-box;
+      padding: 6px 0;
+      border-radius: 50px;
+      opacity: .5;
+      box-shadow: 1px 1px 1px 1px #444;
+      transition-duration: .5s; }
+      section#intro .content span#to-top:hover {
+        opacity: 1;
+        transition-duration: .5s; }
+
+section#about {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  float: left;
+  background: #fff; }
+  section#about .content {
+    width: 100%;
+    max-width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    min-height: 750px; }
+
+section#footer {
+  background: #fff; }
+  section#footer .content {
+    width: 100%;
+    max-width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+    box-sizing: border-box; }
+    section#footer .content ul#social-networks-footer {
+      position: relative;
+      float: left;
+      width: 250px;
+      padding: 3% 0;
+      left: 50%;
+      margin-left: -125px; }
+      section#footer .content ul#social-networks-footer li {
+        display: inline;
+        float: left;
+        padding: 0 3px; }
+        section#footer .content ul#social-networks-footer li a {
+          opacity: 0.5; }
+          section#footer .content ul#social-networks-footer li a:hover {
+            opacity: 1;
+            transition-duration: 0.5s; }
+          section#footer .content ul#social-networks-footer li a img {
+            width: 35px; }
+    section#footer .content #copyright {
+      position: relative;
+      float: left;
+      width: 100%;
+      padding-bottom: 3%; }
+      section#footer .content #copyright address {
+        font-family: GothamLight;
+        font-size: 1.5em;
+        text-align: center; }
+
+.c-hamburger {
+  position: absolute;
+  overflow: hidden;
+  right: 3rem;
+  top: 0;
+  width: 56px;
+  height: 40px;
+  font-size: 0;
+  text-indent: -9999px;
+  background: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  z-index: 12; }
+
+.c-hamburger:focus {
+  outline: none; }
+
+.c-hamburger span {
+  display: block;
+  position: absolute;
+  top: 19px;
+  left: 7px;
+  right: 7px;
+  height: 2px;
+  background: white; }
+
+.c-hamburger span::before, .c-hamburger span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  content: ""; }
+
+.c-hamburger span::before {
+  top: -10px; }
+
+.c-hamburger span::after {
+  bottom: -10px; }
+
+.c-hamburger--htx span {
+  -webkit-transition: background 0s 0.3s;
+  transition: background 0s 0.3s; }
+
+.c-hamburger--htx span::before, .c-hamburger--htx span::after {
+  -webkit-transition-duration: 0.3s, 0.3s;
+  transition-duration: 0.3s, 0.3s;
+  -webkit-transition-delay: 0.3s, 0s;
+  transition-delay: 0.3s, 0s; }
+
+.c-hamburger--htx span::before {
+  -webkit-transition-property: top, -webkit-transform;
+  transition-property: top, transform; }
+
+.c-hamburger--htx span::after {
+  -webkit-transition-property: bottom, -webkit-transform;
+  transition-property: bottom, transform; }
+
+.c-hamburger--htx.is-active span {
+  background: none; }
+
+.c-hamburger--htx.is-active span::before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.c-hamburger--htx.is-active span::after {
+  bottom: 0;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+.c-hamburger--htx.is-active span::before, .c-hamburger--htx.is-active span::after {
+  -webkit-transition-delay: 0s, 0.3s;
+  transition-delay: 0s, 0.3s; }

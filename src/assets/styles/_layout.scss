@@ -1,0 +1,56 @@
+
+//------ intro ------//
+section#intro {
+	@include full-page;
+	background: #333;
+	.content{
+		@include content-center();
+
+		#logo {
+			position:absolute;
+			width:44%;
+			left:50%;
+			margin-left:-22%;
+			top:50%;
+			margin-top:-10%;
+			z-index:2000;
+			img {
+				width:100%;
+			}
+		}
+
+		span#arrow {
+			position:absolute;
+			bottom:5%;
+			left:50%;
+			margin-left:-35px;
+			color:#fff;
+			font-size:1.8rem;
+			font-family:GothamLight;
+			letter-spacing: 1px;
+			cursor:pointer;
+		}
+
+	} 
+} // end section#intro
+
+
+
+//------ features ------//
+section#features {
+	@include full-page;
+	background:#fff;
+	
+	.content{
+		@include content-center;
+		min-height:750px;
+
+		
+
+
+		
+	} 
+} // end section#features
+
+
+

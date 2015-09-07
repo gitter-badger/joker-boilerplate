@@ -1,0 +1,14 @@
+{
+  "name": "joker-framework",
+  "version": "1.0.0",
+  "license": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}

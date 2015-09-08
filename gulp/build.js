@@ -64,13 +64,12 @@ gulp.task('images', function () {
   .pipe(gulp.dest(conf.project.dest + '/assets/images'));
 });
 
-// Replace strings in html files/
-// gulp.task('replace', function(){
-//   gulp.src([conf.project.tmp +'/**/*.html'])
-//   .pipe(replace('bower_components/jquery/dist/jquery.js', 'bower_components/jquery/dist/jquery.min.js'))
-//   .pipe(replace('bower_components/angular/angular.js', 'bower_components/angular/angular.min.js'))
-//   .pipe(gulp.dest(conf.project.dest));
-// });
+gulp.task('replace', function(){
+  gulp.src([conf.project.tmp +'/**/*.html'])
+  .pipe(replace('bower_components/jquery/dist/jquery.js', 'bower_components/jquery/dist/jquery.min.js'))
+  .pipe(replace('bower_components/angular/angular.js', 'bower_components/angular/angular.min.js'))
+  .pipe(gulp.dest(conf.project.dest));
+});
 
 // Build to dist/
 gulp.task('default', function(cb) {
@@ -81,7 +80,7 @@ gulp.task('default', function(cb) {
     'scripts',
     'images',
     'fonts',
-    // 'replace',
+    'replace',
     'bower_components',
-    'mailer', cb);
+    'download', cb);
 });

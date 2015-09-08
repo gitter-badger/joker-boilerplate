@@ -1,7 +1,7 @@
 
 
 exports.project = {
-  name: 'Joker - Javascript Framework',
+  name: 'Joker - Boilerplate',
   dev: 'src',
   tmp: '.tmp',
   dest: 'dist'

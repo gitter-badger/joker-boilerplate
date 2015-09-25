@@ -1,5 +1,7 @@
 # Joker Boilerplate
 
+[![Join the chat at https://gitter.im/gustavomeloweb/joker-boilerplate](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/gustavomeloweb/joker-boilerplate?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 > ![gulp](https://img.shields.io/badge/gulp-%5E3.9.0-green.svg)
 > ![del](https://img.shields.io/badge/del-%5E2.0.1-green.svg)
 > ![browser-sync](https://img.shields.io/badge/browser--sync-%5E1.3.0-green.svg)
